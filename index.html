@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Damelo Online Store | Gadgets & Accessories</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #172033;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      border-radius: 25px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    }
+
+    .product-icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+      color: #2563eb;
+    }
+
+    .product p {
+      color: #667085;
+    }
+
+    .about {
+      background: white;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .contact {
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .address {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.7;
+    }
+
+    footer {
+      background: #070b12;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <div class="logo">
+      Damelo Online Store
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero" id="home">
+
+  <h1>Welcome to Damelo Online Store</h1>
+
+  <p>
+    Shop gadgets, accessories and other quality products
+    from Damelo Online Store.
+  </p>
+
+  <a
+    class="button"
+    href="https://wa.me/2349044141775?text=Hello%20Damelo%20Online%20Store%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+    target="_blank">
+    💬 Shop on WhatsApp
+  </a>
+
+</section>
+
+<section id="products">
+
+  <div class="container">
+
+    <h2 class="title">Our Products</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <div class="product-icon">📱</div>
+        <h3>Mobile Gadgets</h3>
+        <p>Explore gadgets for your everyday needs.</p>
+
+        <a
+          class="button"
+          href="https://wa.me/2349044141775?text=Hello%20Damelo%2C%20I%20am%20interested%20in%20your%20mobile%20gadgets."
+          target="_blank">
+          Ask on WhatsApp
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-icon">🎧</div>
+        <h3>Audio Accessories</h3>
+        <p>Discover useful audio gadgets and accessories.</p>
+
+        <a
+          class="button"
+          href="https://wa.me/2349044141775?text=Hello%20Damelo%2C%20I%20am%20interested%20in%20your%20audio%20accessories."
+          target="_blank">
+          Ask on WhatsApp
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-icon">🔌</div>
+        <h3>Accessories</h3>
+        <p>Find accessories for your devices and gadgets.</p>
+
+        <a
+          class="button"
+          href="https://wa.me/2349044141775?text=Hello%20Damelo%2C%20I%20am%20interested%20in%20your%20accessories."
+          target="_blank">
+          Ask on WhatsApp
+        </a>
+      </div>
+
+      <div class="product">
+        <div class="product-icon">🛍️</div>
+        <h3>Online Shopping</h3>
+        <p>Contact us to ask about available products.</p>
+
+        <a
+          class="button"
+          href="https://wa.me/2349044141775?text=Hello%20Damelo%20Online%20Store%2C%20I%20would%20like%20to%20see%20your%20available%20products."
+          target="_blank">
+          Shop Now
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <h2 class="title">About Damelo Online Store</h2>
+
+    <p>
+      Damelo Online Store is an e-commerce business offering
+      gadgets, accessories and online shopping services.
+      Contact us to learn more about our available products.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <h2>Contact Damelo Online Store</h2>
+
+    <p>Have a question or want to place an order?</p>
+
+    <div class="address">
+
+      <p>📞 <strong>0904 414 1775</strong></p>
+
+      <p>
+        📍 Floor 4, Polystar Building,<br>
+        Lekki 100212, Lagos
+      </p>
+
+    </div>
+
+    <a
+      class="button"
+      href="https://wa.me/2349044141775?text=Hello%20Damelo%20Online%20Store%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+      target="_blank">
+      💬 Chat on WhatsApp
+    </a>
+
+    <br>
+
+    <a
+      class="button"
+      href="tel:09044141775">
+      📞 Call Now
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    ©️ 2026 Damelo Online Store. All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
